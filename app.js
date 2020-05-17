@@ -7,8 +7,7 @@ const app = express()
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }))
 const mailChimpKey = process.env.MAILCHIMP_KEY;
-console.log("KEY", mailChimpKey);
-
+//console.log("KEY", mailChimpKey);
 
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/signup.html")
